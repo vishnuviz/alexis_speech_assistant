@@ -50,7 +50,8 @@ def speak(audio_string):
 def respond(voice_data):
     # 1: greeting
     if there_exists(['hey','hi','hello']):
-        greetings = [f"hey, how can I help you {person_obj.name}", f"hey, what's up? {person_obj.name}", f"I'm listening {person_obj.name}", f"how can I help you? {person_obj.name}", f"hello {person_obj.name}"]
+        greetings = [f"hey, how can I help you {person_obj.name}", f"hey, what's up? {person_obj.name}",
+                     f"I'm listening {person_obj.name}", f"how can I help you? {person_obj.name}", f"hello {person_obj.name}"]
         greet = greetings[random.randint(0,len(greetings)-1)]
         speak(greet)
 
